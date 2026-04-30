@@ -1,0 +1,152 @@
+﻿    <div class="card">
+      <h3>Page 1</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed.jpg" alt="Portfolio page 1 preview">
+    </div>
+    <div class="card">
+      <h3>Page 2</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed2.jpg" alt="Portfolio page 2 preview">
+    </div>
+    <div class="card">
+      <h3>Page 3</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed3.jpg" alt="Portfolio page 3 preview">
+    </div>
+    <div class="card">
+      <h3>Page 4</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed4.jpg" alt="Portfolio page 4 preview">
+    </div>
+    <div class="card">
+      <h3>Page 5</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed5.jpg" alt="Portfolio page 5 preview">
+    </div>
+    <div class="card">
+      <h3>Page 6</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed6.jpg" alt="Portfolio page 6 preview">
+    </div>
+    <div class="card">
+      <h3>Page 7</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed7.jpg" alt="Portfolio page 7 preview">
+    </div>
+    <div class="card">
+      <h3>Page 8</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed8.jpg" alt="Portfolio page 8 preview">
+    </div>
+    <div class="card">
+      <h3>Page 9</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed9.jpg" alt="Portfolio page 9 preview">
+    </div>
+    <div class="card">
+      <h3>Page 10</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed10.jpg" alt="Portfolio page 10 preview">
+    </div>
+    <div class="card">
+      <h3>Page 11</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed11.jpg" alt="Portfolio page 11 preview">
+    </div>
+    <div class="card">
+      <h3>Page 12</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed12.jpg" alt="Portfolio page 12 preview">
+    </div>
+    <div class="card">
+      <h3>Page 13</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed13.jpg" alt="Portfolio page 13 preview">
+    </div>
+    <div class="card">
+      <h3>Page 14</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed14.jpg" alt="Portfolio page 14 preview">
+    </div>
+    <div class="card">
+      <h3>Page 15</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed15.jpg" alt="Portfolio page 15 preview">
+    </div>
+    <div class="card">
+      <h3>Page 16</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed16.jpg" alt="Portfolio page 16 preview">
+    </div>
+    <div class="card">
+      <h3>Page 17</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed17.jpg" alt="Portfolio page 17 preview">
+    </div>
+    <div class="card">
+      <h3>Page 18</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed18.jpg" alt="Portfolio page 18 preview">
+    </div>
+    <div class="card">
+      <h3>Page 19</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed19.jpg" alt="Portfolio page 19 preview">
+    </div>
+    <div class="card">
+      <h3>Page 20</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed20.jpg" alt="Portfolio page 20 preview">
+    </div>
+    <div class="card">
+      <h3>Page 21</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed21.jpg" alt="Portfolio page 21 preview">
+    </div>
+    <div class="card">
+      <h3>Page 22</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed22.jpg" alt="Portfolio page 22 preview">
+    </div>
+    <div class="card">
+      <h3>Page 23</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed23.jpg" alt="Portfolio page 23 preview">
+    </div>
+    <div class="card">
+      <h3>Page 24</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed24.jpg" alt="Portfolio page 24 preview">
+    </div>
+    <div class="card">
+      <h3>Page 25</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed25.jpg" alt="Portfolio page 25 preview">
+    </div>
+    <div class="card">
+      <h3>Page 26</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed26.jpg" alt="Portfolio page 26 preview">
+    </div>
+    <div class="card">
+      <h3>Page 27</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed27.jpg" alt="Portfolio page 27 preview">
+    </div>
+    <div class="card">
+      <h3>Page 28</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed28.jpg" alt="Portfolio page 28 preview">
+    </div>
+    <div class="card">
+      <h3>Page 29</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed29.jpg" alt="Portfolio page 29 preview">
+    </div>
+    <div class="card">
+      <h3>Page 30</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed30.jpg" alt="Portfolio page 30 preview">
+    </div>
+    <div class="card">
+      <h3>Page 31</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed31.jpg" alt="Portfolio page 31 preview">
+    </div>
+    <div class="card">
+      <h3>Page 32</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed32.jpg" alt="Portfolio page 32 preview">
+    </div>
+    <div class="card">
+      <h3>Page 33</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed33.jpg" alt="Portfolio page 33 preview">
+    </div>
+    <div class="card">
+      <h3>Page 34</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed34.jpg" alt="Portfolio page 34 preview">
+    </div>
+    <div class="card">
+      <h3>Page 35</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed35.jpg" alt="Portfolio page 35 preview">
+    </div>
+    <div class="card">
+      <h3>Page 36</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed36.jpg" alt="Portfolio page 36 preview">
+    </div>
+    <div class="card">
+      <h3>Page 37</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed37.jpg" alt="Portfolio page 37 preview">
+    </div>
+    <div class="card">
+      <h3>Page 38</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed38.jpg" alt="Portfolio page 38 preview">
+    </div>

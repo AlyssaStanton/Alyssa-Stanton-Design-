@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alyssa Stanton</title>
+<style>
+:root{
+  --sky:#5a7dff;
+  --magenta:#ff2fa8;
+  --yellow:#fff36b;
+  --bg:#ff2fa8;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background:var(--bg);
+  color:#111;
+  overflow-x:hidden;
+}
+
+header{
+  background:var(--sky);
+  padding:3rem 1rem 5rem;
+  text-align:center;
+  position:relative;
+  border-bottom:4px solid black;
+}
+
+h1{
+  font-size:3rem;
+  color:white;
+  text-shadow:3px 3px 0 var(--magenta), 6px 6px 0 black;
+}
+
+header p{
+  color:var(--yellow);
+  font-weight:bold;
+  margin-top:.5rem;
+}
+
+.star{
+  position:absolute;
+  width:100px;
+  height:100px;
+  background:var(--magenta);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  border:3px solid black;
+}
+.star.yellow{ background:var(--yellow); }
+.star.one{ top:-30px; left:10%; }
+.star.two{ bottom:-40px; right:8%; width:130px; height:130px; }
+
+nav{
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+  margin-top:2rem;
+  flex-wrap:wrap;
+}
+
+nav a{
+  text-decoration:none;
+  padding:.6rem 1.3rem;
+  border:3px solid black;
+  font-weight:bold;
+  box-shadow:3px 3px 0 black;
+  cursor:pointer;
+  color:black;
+}
+
+nav a:nth-child(1){
+  background:var(--yellow);
+}
+
+nav a:nth-child(2){
+  background:var(--magenta);
+  color:white;
+}
+
+nav a:hover{
+  transform:translate(-2px,-2px);
+  box-shadow:5px 5px 0 black;
+}
+
+main{
+  max-width:1000px;
+  margin:-3rem auto 0;
+  padding:2rem;
+}
+
+.hero{
+  background:white;
+  border:3px solid black;
+  padding:2rem;
+  box-shadow:6px 6px 0 black;
+  text-align:center;
+}
+
+.hero h2{
+  font-size:2.2rem;
+}
+
+.hero span{color:var(--magenta)}
+
+.portrait{
+  width:170px;
+  height:170px;
+  margin:1.5rem auto 0;
+  background:var(--yellow);
+  border:4px solid black;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  text-align:center;
+  box-shadow:6px 6px 0 black;
+  transform:rotate(-3deg);
+}
+
+.about{
+  margin-top:2rem;
+  background:white;
+  border:3px solid black;
+  padding:2rem;
+  box-shadow:6px 6px 0 black;
+}
+
+.grid{
+  margin-top:2rem;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:2rem;
+}
+
+.card{
+  background:white;
+  border:3px solid black;
+  padding:1.8rem;
+  box-shadow:6px 6px 0 black;
+}
+
+.card:nth-child(1){background:var(--magenta); color:white}
+.card:nth-child(2){background:var(--yellow)}
+
+.btn{
+  display:inline-block;
+  padding:.4rem .9rem;
+  border:2px solid black;
+  background:var(--yellow);
+  color:black;
+  font-weight:bold;
+  text-decoration:none;
+  box-shadow:2px 2px 0 black;
+  margin-top:1rem;
+}
+
+footer{
+  margin-top:4rem;
+  background:black;
+  color:white;
+  text-align:center;
+  padding:1.5rem;
+}
+
+html{scroll-behavior:smooth;}
+
+.portfolio-tab{
+  margin-top:2rem;
+  background:var(--yellow);
+  border:4px solid black;
+  box-shadow:6px 6px 0 black;
+  padding:1rem 2rem;
+  text-align:center;
+  font-weight:bold;
+  font-size:2rem;
+  display:inline-block;
+  transform:rotate(-2deg);
+  letter-spacing:2px;
+}
+
+.portfolio-big{
+  margin-top:3rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.portfolio-big .square{
+  width:70vw;
+  max-width:700px;
+  aspect-ratio:1/1;
+  background:white;
+  border:4px solid black;
+  box-shadow:8px 8px 0 black;
+}
+
+#portfolio-intro{
+  text-align:center;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="star one"></div>
+  <div class="star yellow two"></div>
+
+  <h1>Alyssa Stanton</h1>
+  <p>GRAPHIC DESIGNER</p>
+
+  <div class="portrait">YOUR DRAWN PIC</div>
+
+  <nav>
+    <a href="#about">ABOUT ME</a>
+    <a href="#portfolio">PORTFOLIO</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <h2>Hi I'm <span>Alyssa</span> ✦</h2>
+  <p>I am a Graphic Designer and Artist. I specialize in UI/UX Design, Packaging Design, and Branding. I have a versatile skillset and am proficient in most Adobe programs, as well as Figma. I love to work with projects that allow me to create with a sense of whimsical creativity, but I have the experience to confidently perform a large variety of different tasks.</p>
+</section>
+
+<section id="about">
+  <div class="about">
+    <h2>About Me</h2>
+    <p></p>
+  </div>
+</section>
+
+<section id="portfolio-intro">
+  <div class="portfolio-tab">
+    ✦ PORTFOLIO ✦
+  </div>
+</section>
+
+<section id="portfolio">
+
+  <div class="portfolio-big">
+    <div class="square"></div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Page 1</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed.jpg" alt="Portfolio page 1 preview">
+    </div>
+    <div class="card">
+      <h3>Page 2</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed2.jpg" alt="Portfolio page 2 preview">
+    </div>
+    <div class="card">
+      <h3>Page 3</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed3.jpg" alt="Portfolio page 3 preview">
+    </div>
+    <div class="card">
+      <h3>Page 4</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed4.jpg" alt="Portfolio page 4 preview">
+    </div>
+    <div class="card">
+      <h3>Page 5</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed5.jpg" alt="Portfolio page 5 preview">
+    </div>
+    <div class="card">
+      <h3>Page 6</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed6.jpg" alt="Portfolio page 6 preview">
+    </div>
+    <div class="card">
+      <h3>Page 7</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed7.jpg" alt="Portfolio page 7 preview">
+    </div>
+    <div class="card">
+      <h3>Page 8</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed8.jpg" alt="Portfolio page 8 preview">
+    </div>
+    <div class="card">
+      <h3>Page 9</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed9.jpg" alt="Portfolio page 9 preview">
+    </div>
+    <div class="card">
+      <h3>Page 10</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed10.jpg" alt="Portfolio page 10 preview">
+    </div>
+    <div class="card">
+      <h3>Page 11</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed11.jpg" alt="Portfolio page 11 preview">
+    </div>
+    <div class="card">
+      <h3>Page 12</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed12.jpg" alt="Portfolio page 12 preview">
+    </div>
+    <div class="card">
+      <h3>Page 13</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed13.jpg" alt="Portfolio page 13 preview">
+    </div>
+    <div class="card">
+      <h3>Page 14</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed14.jpg" alt="Portfolio page 14 preview">
+    </div>
+    <div class="card">
+      <h3>Page 15</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed15.jpg" alt="Portfolio page 15 preview">
+    </div>
+    <div class="card">
+      <h3>Page 16</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed16.jpg" alt="Portfolio page 16 preview">
+    </div>
+    <div class="card">
+      <h3>Page 17</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed17.jpg" alt="Portfolio page 17 preview">
+    </div>
+    <div class="card">
+      <h3>Page 18</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed18.jpg" alt="Portfolio page 18 preview">
+    </div>
+    <div class="card">
+      <h3>Page 19</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed19.jpg" alt="Portfolio page 19 preview">
+    </div>
+    <div class="card">
+      <h3>Page 20</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed20.jpg" alt="Portfolio page 20 preview">
+    </div>
+    <div class="card">
+      <h3>Page 21</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed21.jpg" alt="Portfolio page 21 preview">
+    </div>
+    <div class="card">
+      <h3>Page 22</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed22.jpg" alt="Portfolio page 22 preview">
+    </div>
+    <div class="card">
+      <h3>Page 23</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed23.jpg" alt="Portfolio page 23 preview">
+    </div>
+    <div class="card">
+      <h3>Page 24</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed24.jpg" alt="Portfolio page 24 preview">
+    </div>
+    <div class="card">
+      <h3>Page 25</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed25.jpg" alt="Portfolio page 25 preview">
+    </div>
+    <div class="card">
+      <h3>Page 26</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed26.jpg" alt="Portfolio page 26 preview">
+    </div>
+    <div class="card">
+      <h3>Page 27</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed27.jpg" alt="Portfolio page 27 preview">
+    </div>
+    <div class="card">
+      <h3>Page 28</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed28.jpg" alt="Portfolio page 28 preview">
+    </div>
+    <div class="card">
+      <h3>Page 29</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed29.jpg" alt="Portfolio page 29 preview">
+    </div>
+    <div class="card">
+      <h3>Page 30</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed30.jpg" alt="Portfolio page 30 preview">
+    </div>
+    <div class="card">
+      <h3>Page 31</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed31.jpg" alt="Portfolio page 31 preview">
+    </div>
+    <div class="card">
+      <h3>Page 32</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed32.jpg" alt="Portfolio page 32 preview">
+    </div>
+    <div class="card">
+      <h3>Page 33</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed33.jpg" alt="Portfolio page 33 preview">
+    </div>
+    <div class="card">
+      <h3>Page 34</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed34.jpg" alt="Portfolio page 34 preview">
+    </div>
+    <div class="card">
+      <h3>Page 35</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed35.jpg" alt="Portfolio page 35 preview">
+    </div>
+    <div class="card">
+      <h3>Page 36</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed36.jpg" alt="Portfolio page 36 preview">
+    </div>
+    <div class="card">
+      <h3>Page 37</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed37.jpg" alt="Portfolio page 37 preview">
+    </div>
+    <div class="card">
+      <h3>Page 38</h3>
+      <img src="Alyssa Stanton - Official Portfolio Front Page Removed38.jpg" alt="Portfolio page 38 preview">
+    </div>
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Alyssa Stanton</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alyssa Stanton</title>
+
+<style>
+:root{
+  --sky:#5a7dff;
+  --magenta:#ff2fa8;
+  --yellow:#fff36b;
+  --bg:#ff2fa8;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background:var(--bg);
+  color:#111;
+  overflow-x:hidden;
+}
+
+/* =========================
+   COMIC HALFTONE TEXTURE
+========================= */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+
+  /* comic dot pattern */
+  background-image: radial-gradient(circle, rgba(0,0,0,0.25) 2px, transparent 2px);
+  background-size: 10px 10px;
+
+  mix-blend-mode: multiply;
+  opacity: 0.35;
+}
+
+/* keep content above texture */
+header, main, footer {
+  position: relative;
+  z-index: 1;
+}
+
+header{
+  background:var(--sky);
+  padding:3rem 1rem 5rem;
+  text-align:center;
+  position:relative;
+  border-bottom:4px solid black;
+}
+
+h1{
+  font-size:3rem;
+  color:white;
+  text-shadow:3px 3px 0 var(--magenta), 6px 6px 0 black;
+}
+
+header p{
+  color:var(--yellow);
+  font-weight:bold;
+  margin-top:.5rem;
+}
+
+.star{
+  position:absolute;
+  width:100px;
+  height:100px;
+  background:var(--magenta);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  border:3px solid black;
+}
+.star.yellow{ background:var(--yellow); }
+.star.one{ top:-30px; left:10%; }
+.star.two{ bottom:-40px; right:8%; width:130px; height:130px; }
+
+nav{
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+  margin-top:2rem;
+  flex-wrap:wrap;
+}
+
+nav a{
+  text-decoration:none;
+  padding:.6rem 1.3rem;
+  border:3px solid black;
+  font-weight:bold;
+  box-shadow:3px 3px 0 black;
+  cursor:pointer;
+  color:black;
+}
+
+nav a:nth-child(1){
+  background:var(--yellow);
+}
+
+nav a:nth-child(2){
+  background:var(--magenta);
+  color:white;
+}
+
+nav a:nth-child(3){
+  background:var(--sky);
+  color:white;
+}
+
+nav a:hover{
+  transform:translate(-2px,-2px);
+  box-shadow:5px 5px 0 black;
+}
+
+main{
+  max-width:1000px;
+  margin:-3rem auto 0;
+  padding:2rem;
+  position:relative;
+}
+
+.hero{
+  background:white;
+  border:3px solid black;
+  padding:2rem;
+  box-shadow:6px 6px 0 black;
+  text-align:center;
+}
+
+.hero h2{
+  font-size:2.2rem;
+}
+
+.hero span{color:var(--magenta)}
+
+.portrait{
+  width:170px;
+  height:170px;
+  position:absolute;
+  left:-70px;
+  top:45px;
+  background:var(--yellow);
+  border:4px solid black;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  text-align:center;
+  box-shadow:6px 6px 0 black;
+  transform:rotate(-3deg);
+  z-index:10;
+}
+
+.about{
+  margin-top:2rem;
+  background:white;
+  border:3px solid black;
+  padding:2rem;
+  box-shadow:6px 6px 0 black;
+  position:relative;
+}
+
+.about p + p {
+  margin-top:1rem;
+}
+
+.grid{
+  margin-top:2rem;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:2rem;
+}
+
+.portfolio-pages{
+  margin-top:2rem;
+  text-align:center;
+}
+
+.portfolio-pages h3{
+  font-size:1.8rem;
+  text-align:center;
+  margin-bottom:1rem;
+}
+
+.carousel-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:1.5rem;
+  margin-top:1.5rem;
+}
+
+.carousel{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  background:white;
+  border:4px solid black;
+  box-shadow:8px 8px 0 black;
+  padding:1rem;
+  max-width:950px;
+}
+
+.carousel img{
+  max-width:900px;
+  height:auto;
+  display:block;
+}
+
+.carousel-btn{
+  background:var(--yellow);
+  border:3px solid black;
+  box-shadow:4px 4px 0 black;
+  padding:.7rem 1rem;
+  font-weight:bold;
+  cursor:pointer;
+  font-size:1.2rem;
+  color:black;
+  flex-shrink:0;
+}
+
+.carousel-btn:hover{
+  transform:translate(-2px,-2px);
+  box-shadow:6px 6px 0 black;
+}
+
+.carousel-btn:active{
+  transform:translate(1px,1px);
+  box-shadow:2px 2px 0 black;
+}
+
+.carousel-counter{
+  margin-top:1rem;
+  font-weight:bold;
+  font-size:1rem;
+}
+
+.resume-embed{
+  margin-top:2rem;
+  display:flex;
+  justify-content:center;
+  background:white;
+  border:4px solid black;
+  box-shadow:8px 8px 0 black;
+  padding:1rem;
+}
+
+.resume-embed img{
+  width:100%;
+  max-width:1200px;
+  height:auto;
+  display:block;
+}
+
+.card:nth-child(1){background:var(--magenta); color:white}
+.card:nth-child(2){background:var(--yellow)}
+
+.btn{
+  display:inline-block;
+  padding:.4rem .9rem;
+  border:2px solid black;
+  background:var(--yellow);
+  color:black;
+  font-weight:bold;
+  text-decoration:none;
+  box-shadow:2px 2px 0 black;
+  margin-top:1rem;
+}
+
+footer{
+  margin-top:4rem;
+  background:black;
+  color:white;
+  text-align:center;
+  padding:1.5rem;
+}
+
+html{scroll-behavior:smooth;}
+
+.portfolio-tab{
+  margin-top:2rem;
+  background:var(--yellow);
+  border:4px solid black;
+  box-shadow:6px 6px 0 black;
+  padding:1rem 2rem;
+  text-align:center;
+  font-weight:bold;
+  font-size:2rem;
+  display:inline-block;
+  transform:rotate(-2deg);
+  letter-spacing:2px;
+}
+
+#portfolio-intro,
+#resume-intro{
+  text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="star one"></div>
+  <div class="star yellow two"></div>
+
+  <h1>Alyssa Stanton</h1>
+  <p>GRAPHIC DESIGNER</p>
+
+  <nav>
+    <a href="#about">ABOUT ME</a>
+    <a href="#portfolio">PORTFOLIO</a>
+    <a href="Final Website Resume Page.html">RESUME</a>
+  </nav>
+</header>
+
+<main>
+
+<div class="portrait">YOUR DRAWN PIC</div>
+
+<section class="hero">
+  <h2>Hi I'm <span>Alyssa</span> ✦</h2>
+  <p>Packaging and Branding Designer</p>
+</section>
+
+<section id="about">
+  <div class="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate graphic design student with a keen interest in UX/UI design, Branding, and Packaging Design. I've have a strong foundation in visual communication and design principles. I have developed skills in a variety different areas such as photography, video editing, and coding as well. I do freelance on the side and have done a lot of volunteer work for local businesses and university clubs as well. I am open to relocation at any time, but am currently based in Fort Smith, Arkansas.</p>
+
+    <p>In my time not spent designing or working, I enjoy playing video games, learning, and traveling. Designing and creating is something I am very passionate about overall, and I take pride in my designs. I generally love to work with projects that allow me to grow creatively. I look forward to expanding my skills and knowledge towards my design career, and am excited to see where it takes me.</p>
+  </div>
+</section>
+
+<section id="portfolio-intro">
+  <div class="portfolio-tab">✦ PORTFOLIO ✦</div>
+</section>
+
+<section id="portfolio">
+  <div class="portfolio-pages">
+    <div class="carousel-container">
+      <button class="carousel-btn" id="prev-btn">← PREV</button>
+      <div class="carousel">
+        <img id="carousel-img" src="" alt="Portfolio page">
+      </div>
+      <button class="carousel-btn" id="next-btn">NEXT →</button>
+    </div>
+    <div class="carousel-counter" id="carousel-counter"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="about">
+    <h2>Want to Reach Out?</h2>
+    <p><strong>Email:</strong> A.Stanton2016@gmail.com</p>
+    <p><strong>Phone:</strong> (719) 675-2896</p>
+    <p><strong>LinkedIn:</strong> linkedin.com/in/alyssa-stanton-816a90371/</p>
+    <p><strong>Portfolio:</strong> www.alyssastantondesign.com</p>
+  </div>
+</section>
+
+</main>
+
+<script>
+  const pageFiles = ['Alyssa Stanton - Official Portfolio Front Page Removed.jpg'];
+  for (let i = 2; i <= 38; i++) {
+    pageFiles.push(`Alyssa Stanton - Official Portfolio Front Page Removed${i}.jpg`);
+  }
+
+  let currentIndex = 0;
+  const carouselImg = document.getElementById('carousel-img');
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
+  const counter = document.getElementById('carousel-counter');
+
+  function updateCarousel() {
+    carouselImg.src = pageFiles[currentIndex];
+    carouselImg.alt = `Portfolio page ${currentIndex + 1}`;
+    counter.textContent = `${currentIndex + 1} / ${pageFiles.length}`;
+  }
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + pageFiles.length) % pageFiles.length;
+    updateCarousel();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % pageFiles.length;
+    updateCarousel();
+  });
+
+  updateCarousel();
+</script>
+
+<footer>
+  <p>© 2026 Alyssa Stanton</p>
+</footer>
+
+</body>
+</html>
